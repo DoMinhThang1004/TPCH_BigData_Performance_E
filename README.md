@@ -6,7 +6,7 @@
 - **Môi trường:** Ubuntu (WSL) trên Windows.
 - **Ngôn ngữ:** Python (PySpark), SQL.
 - **Hệ quản trị CSDL:** Apache Spark 3.x, DuckDB 1.0.0.
-- **Dataset:** TPC-H Benchmark (Scale Factor = 10, dung lượng ~10GB).
+- **Dataset:** TPC-H Benchmark (Scale Factor, dung lượng).
 
 ## Cấu trúc thư mục
 - `run_spark_final.py`: Kịch bản thực thi Apache Spark SQL.
@@ -14,6 +14,6 @@
 - `setup_commands.sh`: Kịch bản sinh dữ liệu TPC-H.
 
 ## Hướng dẫn thực nghiệm
-1. **Sinh dữ liệu:** Chạy `./setup_commands.sh` để sinh bộ dữ liệu 10GB.
+1. **Sinh dữ liệu:** Chạy `./setup_commands.sh` để sinh bộ dữ liệu.
 2. **Thực thi DuckDB:** Sử dụng lệnh trong `duckdb_queries.sql` để nạp dữ liệu và truy vấn.
 3. **Thực thi Spark:** Chạy `python3 run_spark_final.py` để thực hiện benchmark.
